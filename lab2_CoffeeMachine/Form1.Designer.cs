@@ -126,7 +126,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.29527F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.70473F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.Controls.Add(this.currentBalance, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
@@ -145,11 +145,11 @@
             this.currentBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.currentBalance.AutoSize = true;
             this.currentBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.currentBalance.Location = new System.Drawing.Point(337, 47);
+            this.currentBalance.Location = new System.Drawing.Point(324, 47);
             this.currentBalance.Margin = new System.Windows.Forms.Padding(0);
             this.currentBalance.Name = "currentBalance";
             this.tableLayoutPanel3.SetRowSpan(this.currentBalance, 2);
-            this.currentBalance.Size = new System.Drawing.Size(63, 17);
+            this.currentBalance.Size = new System.Drawing.Size(76, 17);
             this.currentBalance.TabIndex = 1;
             this.currentBalance.Text = "0р";
             // 
@@ -158,7 +158,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(246, 47);
+            this.label1.Location = new System.Drawing.Point(233, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.tableLayoutPanel3.SetRowSpan(this.label1, 2);
@@ -183,7 +183,7 @@
             this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel4, 2);
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(224, 112);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(215, 112);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // butBanknote1
@@ -193,20 +193,22 @@
             this.butBanknote1.Location = new System.Drawing.Point(0, 0);
             this.butBanknote1.Margin = new System.Windows.Forms.Padding(0);
             this.butBanknote1.Name = "butBanknote1";
-            this.butBanknote1.Size = new System.Drawing.Size(112, 56);
+            this.butBanknote1.Size = new System.Drawing.Size(107, 56);
             this.butBanknote1.TabIndex = 0;
             this.butBanknote1.TextBut = "10р";
+            this.butBanknote1.Click += new System.EventHandler(this.butBanknote1_Click);
             // 
             // butBanknote2
             // 
             this.butBanknote2.Denomination = 50;
             this.butBanknote2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote2.Location = new System.Drawing.Point(112, 0);
+            this.butBanknote2.Location = new System.Drawing.Point(107, 0);
             this.butBanknote2.Margin = new System.Windows.Forms.Padding(0);
             this.butBanknote2.Name = "butBanknote2";
-            this.butBanknote2.Size = new System.Drawing.Size(112, 56);
+            this.butBanknote2.Size = new System.Drawing.Size(108, 56);
             this.butBanknote2.TabIndex = 1;
             this.butBanknote2.TextBut = "50р";
+            this.butBanknote2.Click += new System.EventHandler(this.butBanknote2_Click);
             // 
             // butBanknote3
             // 
@@ -215,20 +217,22 @@
             this.butBanknote3.Location = new System.Drawing.Point(0, 56);
             this.butBanknote3.Margin = new System.Windows.Forms.Padding(0);
             this.butBanknote3.Name = "butBanknote3";
-            this.butBanknote3.Size = new System.Drawing.Size(112, 56);
+            this.butBanknote3.Size = new System.Drawing.Size(107, 56);
             this.butBanknote3.TabIndex = 2;
             this.butBanknote3.TextBut = "100р";
+            this.butBanknote3.Click += new System.EventHandler(this.butBanknote3_Click);
             // 
             // butBanknote4
             // 
             this.butBanknote4.Denomination = 500;
             this.butBanknote4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote4.Location = new System.Drawing.Point(112, 56);
+            this.butBanknote4.Location = new System.Drawing.Point(107, 56);
             this.butBanknote4.Margin = new System.Windows.Forms.Padding(0);
             this.butBanknote4.Name = "butBanknote4";
-            this.butBanknote4.Size = new System.Drawing.Size(112, 56);
+            this.butBanknote4.Size = new System.Drawing.Size(108, 56);
             this.butBanknote4.TabIndex = 3;
             this.butBanknote4.TextBut = "500р";
+            this.butBanknote4.Click += new System.EventHandler(this.butBanknote4_Click);
             // 
             // tableLayoutPanel9
             // 

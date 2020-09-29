@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Balance.cs" />
     <Compile Include="ButBanknote.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,12 +59,16 @@
     <Compile Include="ButDrink.Designer.cs">
       <DependentUpon>ButDrink.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoffeeMachine.cs" />
+    <Compile Include="Drink.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IMachine.cs" />
+    <Compile Include="Machine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ButBanknote.resx">

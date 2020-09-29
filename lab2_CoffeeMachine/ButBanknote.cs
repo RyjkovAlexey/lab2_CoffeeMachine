@@ -23,6 +23,18 @@ namespace lab2_CoffeeMachine
             set;
         }
 
+        public event EventHandler Click
+        {
+            add
+            {
+                button1.Click += value;
+            }
+            remove
+            {
+                button1.Click -= value;
+            }
+        }
+
         public string TextBut
         {
             get => this.button1.Text;

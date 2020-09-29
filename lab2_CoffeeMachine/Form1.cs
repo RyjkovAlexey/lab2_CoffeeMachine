@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace lab2_CoffeeMachine
@@ -17,10 +10,36 @@ namespace lab2_CoffeeMachine
             InitializeComponent();
         }
 
+        Balance balance = new Balance();
 
         private void butEspresso_Click(object sender, EventArgs e)
         {
-            butEspresso.Select();
+            balance.Pay(butEspresso.Price);
+            currentBalance.Text = balance.CurrentBalance.ToString();
+        }
+
+        private void butBanknote1_Click(object sender, EventArgs e)
+        {
+            balance.DepositMoney(butBanknote1.Denomination);
+            currentBalance.Text = balance.CurrentBalance.ToString();
+        }
+
+        private void butBanknote2_Click(object sender, EventArgs e)
+        {
+            balance.DepositMoney(butBanknote2.Denomination);
+            currentBalance.Text = balance.CurrentBalance.ToString();
+        }
+
+        private void butBanknote3_Click(object sender, EventArgs e)
+        {
+            balance.DepositMoney(butBanknote3.Denomination);
+            currentBalance.Text = balance.CurrentBalance.ToString();
+        }
+
+        private void butBanknote4_Click(object sender, EventArgs e)
+        {
+            balance.DepositMoney(butBanknote4.Denomination);
+            currentBalance.Text = balance.CurrentBalance.ToString();
         }
     }
 }
