@@ -28,20 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.currentBalance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.butCancelingOperation = new System.Windows.Forms.Button();
+            this.butReturnMoney = new System.Windows.Forms.Button();
+            this.tableDrinkButtons = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.currentStrength = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.labSugar = new System.Windows.Forms.Label();
+            this.barSugar = new System.Windows.Forms.TrackBar();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.currentSugar = new System.Windows.Forms.Label();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.labStrength = new System.Windows.Forms.Label();
+            this.barStrength = new System.Windows.Forms.TrackBar();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.butPickDrink = new System.Windows.Forms.Button();
             this.butBanknote1 = new lab2_CoffeeMachine.ButBanknote();
             this.butBanknote2 = new lab2_CoffeeMachine.ButBanknote();
             this.butBanknote3 = new lab2_CoffeeMachine.ButBanknote();
             this.butBanknote4 = new lab2_CoffeeMachine.ButBanknote();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.butCancelingOperation = new System.Windows.Forms.Button();
-            this.butReturnMoney = new System.Windows.Forms.Button();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.butMocha = new lab2_CoffeeMachine.ButDrink();
             this.butBlackTeaLemon = new lab2_CoffeeMachine.ButDrink();
             this.butBlackTea = new lab2_CoffeeMachine.ButDrink();
@@ -50,30 +69,13 @@
             this.butCappuccino = new lab2_CoffeeMachine.ButDrink();
             this.butAmericano = new lab2_CoffeeMachine.ButDrink();
             this.butEspresso = new lab2_CoffeeMachine.ButDrink();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.barSugar = new System.Windows.Forms.TrackBar();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.currentSugar = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.barStrength = new System.Windows.Forms.TrackBar();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.butPickDrink = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.tableDrinkButtons.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -91,7 +93,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableDrinkButtons, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -124,9 +126,9 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.29527F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.70473F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.72492F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.27508F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel3.Controls.Add(this.currentBalance, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
@@ -145,11 +147,11 @@
             this.currentBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.currentBalance.AutoSize = true;
             this.currentBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.currentBalance.Location = new System.Drawing.Point(324, 47);
+            this.currentBalance.Location = new System.Drawing.Point(309, 47);
             this.currentBalance.Margin = new System.Windows.Forms.Padding(0);
             this.currentBalance.Name = "currentBalance";
             this.tableLayoutPanel3.SetRowSpan(this.currentBalance, 2);
-            this.currentBalance.Size = new System.Drawing.Size(76, 17);
+            this.currentBalance.Size = new System.Drawing.Size(91, 17);
             this.currentBalance.TabIndex = 1;
             this.currentBalance.Text = "0р";
             // 
@@ -158,7 +160,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(233, 47);
+            this.label1.Location = new System.Drawing.Point(218, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.tableLayoutPanel3.SetRowSpan(this.label1, 2);
@@ -183,56 +185,8 @@
             this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel4, 2);
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(215, 112);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(200, 112);
             this.tableLayoutPanel4.TabIndex = 3;
-            // 
-            // butBanknote1
-            // 
-            this.butBanknote1.Denomination = 10;
-            this.butBanknote1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote1.Location = new System.Drawing.Point(0, 0);
-            this.butBanknote1.Margin = new System.Windows.Forms.Padding(0);
-            this.butBanknote1.Name = "butBanknote1";
-            this.butBanknote1.Size = new System.Drawing.Size(107, 56);
-            this.butBanknote1.TabIndex = 0;
-            this.butBanknote1.TextBut = "10р";
-            this.butBanknote1.Click += new System.EventHandler(this.butBanknote1_Click);
-            // 
-            // butBanknote2
-            // 
-            this.butBanknote2.Denomination = 50;
-            this.butBanknote2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote2.Location = new System.Drawing.Point(107, 0);
-            this.butBanknote2.Margin = new System.Windows.Forms.Padding(0);
-            this.butBanknote2.Name = "butBanknote2";
-            this.butBanknote2.Size = new System.Drawing.Size(108, 56);
-            this.butBanknote2.TabIndex = 1;
-            this.butBanknote2.TextBut = "50р";
-            this.butBanknote2.Click += new System.EventHandler(this.butBanknote2_Click);
-            // 
-            // butBanknote3
-            // 
-            this.butBanknote3.Denomination = 100;
-            this.butBanknote3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote3.Location = new System.Drawing.Point(0, 56);
-            this.butBanknote3.Margin = new System.Windows.Forms.Padding(0);
-            this.butBanknote3.Name = "butBanknote3";
-            this.butBanknote3.Size = new System.Drawing.Size(107, 56);
-            this.butBanknote3.TabIndex = 2;
-            this.butBanknote3.TextBut = "100р";
-            this.butBanknote3.Click += new System.EventHandler(this.butBanknote3_Click);
-            // 
-            // butBanknote4
-            // 
-            this.butBanknote4.Denomination = 500;
-            this.butBanknote4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBanknote4.Location = new System.Drawing.Point(107, 56);
-            this.butBanknote4.Margin = new System.Windows.Forms.Padding(0);
-            this.butBanknote4.Name = "butBanknote4";
-            this.butBanknote4.Size = new System.Drawing.Size(108, 56);
-            this.butBanknote4.TabIndex = 3;
-            this.butBanknote4.TextBut = "500р";
-            this.butBanknote4.Click += new System.EventHandler(this.butBanknote4_Click);
             // 
             // tableLayoutPanel9
             // 
@@ -273,128 +227,32 @@
             this.butReturnMoney.TabIndex = 0;
             this.butReturnMoney.Text = "Сдача";
             this.butReturnMoney.UseVisualStyleBackColor = true;
+            this.butReturnMoney.Click += new System.EventHandler(this.butReturnMoney_Click);
             // 
-            // tableLayoutPanel5
+            // tableDrinkButtons
             // 
-            this.tableLayoutPanel5.ColumnCount = 4;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Controls.Add(this.butMocha, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.butBlackTeaLemon, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.butBlackTea, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.butLatte, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.butHotChocolate, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.butCappuccino, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.butAmericano, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.butEspresso, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(400, 225);
-            this.tableLayoutPanel5.TabIndex = 1;
-            // 
-            // butMocha
-            // 
-            this.butMocha.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butMocha.DrinkName = "Мокко\n40р";
-            this.butMocha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butMocha.Location = new System.Drawing.Point(300, 112);
-            this.butMocha.Margin = new System.Windows.Forms.Padding(0);
-            this.butMocha.Name = "butMocha";
-            this.butMocha.Price = 40;
-            this.butMocha.Size = new System.Drawing.Size(100, 113);
-            this.butMocha.TabIndex = 7;
-            // 
-            // butBlackTeaLemon
-            // 
-            this.butBlackTeaLemon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBlackTeaLemon.DrinkName = "Чай черный с лимоном\n15р";
-            this.butBlackTeaLemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butBlackTeaLemon.Location = new System.Drawing.Point(200, 112);
-            this.butBlackTeaLemon.Margin = new System.Windows.Forms.Padding(0);
-            this.butBlackTeaLemon.Name = "butBlackTeaLemon";
-            this.butBlackTeaLemon.Price = 15;
-            this.butBlackTeaLemon.Size = new System.Drawing.Size(100, 113);
-            this.butBlackTeaLemon.TabIndex = 6;
-            // 
-            // butBlackTea
-            // 
-            this.butBlackTea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butBlackTea.DrinkName = "Чай черный\n15р";
-            this.butBlackTea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butBlackTea.Location = new System.Drawing.Point(100, 112);
-            this.butBlackTea.Margin = new System.Windows.Forms.Padding(0);
-            this.butBlackTea.Name = "butBlackTea";
-            this.butBlackTea.Price = 15;
-            this.butBlackTea.Size = new System.Drawing.Size(100, 113);
-            this.butBlackTea.TabIndex = 5;
-            // 
-            // butLatte
-            // 
-            this.butLatte.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butLatte.DrinkName = "Латте\n40р";
-            this.butLatte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butLatte.Location = new System.Drawing.Point(0, 112);
-            this.butLatte.Margin = new System.Windows.Forms.Padding(0);
-            this.butLatte.Name = "butLatte";
-            this.butLatte.Price = 40;
-            this.butLatte.Size = new System.Drawing.Size(100, 113);
-            this.butLatte.TabIndex = 4;
-            // 
-            // butHotChocolate
-            // 
-            this.butHotChocolate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butHotChocolate.DrinkName = "Горячий шоколад\n20р";
-            this.butHotChocolate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butHotChocolate.Location = new System.Drawing.Point(300, 0);
-            this.butHotChocolate.Margin = new System.Windows.Forms.Padding(0);
-            this.butHotChocolate.Name = "butHotChocolate";
-            this.butHotChocolate.Price = 20;
-            this.butHotChocolate.Size = new System.Drawing.Size(100, 112);
-            this.butHotChocolate.TabIndex = 3;
-            // 
-            // butCappuccino
-            // 
-            this.butCappuccino.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butCappuccino.DrinkName = "Капучино\n40р";
-            this.butCappuccino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butCappuccino.Location = new System.Drawing.Point(200, 0);
-            this.butCappuccino.Margin = new System.Windows.Forms.Padding(0);
-            this.butCappuccino.Name = "butCappuccino";
-            this.butCappuccino.Price = 40;
-            this.butCappuccino.Size = new System.Drawing.Size(100, 112);
-            this.butCappuccino.TabIndex = 2;
-            // 
-            // butAmericano
-            // 
-            this.butAmericano.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butAmericano.DrinkName = "Американо\n30р";
-            this.butAmericano.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butAmericano.Location = new System.Drawing.Point(100, 0);
-            this.butAmericano.Margin = new System.Windows.Forms.Padding(0);
-            this.butAmericano.Name = "butAmericano";
-            this.butAmericano.Price = 30;
-            this.butAmericano.Size = new System.Drawing.Size(100, 112);
-            this.butAmericano.TabIndex = 1;
-            // 
-            // butEspresso
-            // 
-            this.butEspresso.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.butEspresso.DrinkName = "Эспрессо\n20р";
-            this.butEspresso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butEspresso.Location = new System.Drawing.Point(0, 0);
-            this.butEspresso.Margin = new System.Windows.Forms.Padding(0);
-            this.butEspresso.Name = "butEspresso";
-            this.butEspresso.Price = 20;
-            this.butEspresso.Size = new System.Drawing.Size(100, 112);
-            this.butEspresso.TabIndex = 0;
-            this.butEspresso.Click += new System.EventHandler(this.butEspresso_Click);
+            this.tableDrinkButtons.ColumnCount = 4;
+            this.tableDrinkButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableDrinkButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableDrinkButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableDrinkButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableDrinkButtons.Controls.Add(this.butMocha, 3, 1);
+            this.tableDrinkButtons.Controls.Add(this.butBlackTeaLemon, 2, 1);
+            this.tableDrinkButtons.Controls.Add(this.butBlackTea, 1, 1);
+            this.tableDrinkButtons.Controls.Add(this.butLatte, 0, 1);
+            this.tableDrinkButtons.Controls.Add(this.butHotChocolate, 3, 0);
+            this.tableDrinkButtons.Controls.Add(this.butCappuccino, 2, 0);
+            this.tableDrinkButtons.Controls.Add(this.butAmericano, 1, 0);
+            this.tableDrinkButtons.Controls.Add(this.butEspresso, 0, 0);
+            this.tableDrinkButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableDrinkButtons.Location = new System.Drawing.Point(0, 0);
+            this.tableDrinkButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.tableDrinkButtons.Name = "tableDrinkButtons";
+            this.tableDrinkButtons.RowCount = 2;
+            this.tableDrinkButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableDrinkButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableDrinkButtons.Size = new System.Drawing.Size(400, 225);
+            this.tableDrinkButtons.TabIndex = 1;
             // 
             // tableLayoutPanel6
             // 
@@ -420,7 +278,7 @@
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label6, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.currentStrength, 0, 1);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(200, 112);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
@@ -443,23 +301,23 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Текущая крепость";
             // 
-            // label6
+            // currentStrength
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(92, 56);
-            this.label6.Margin = new System.Windows.Forms.Padding(0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "1";
+            this.currentStrength.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currentStrength.AutoSize = true;
+            this.currentStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.currentStrength.Location = new System.Drawing.Point(92, 56);
+            this.currentStrength.Margin = new System.Windows.Forms.Padding(0);
+            this.currentStrength.Name = "currentStrength";
+            this.currentStrength.Size = new System.Drawing.Size(16, 17);
+            this.currentStrength.TabIndex = 1;
+            this.currentStrength.Text = "1";
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.labSugar, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.barSugar, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
@@ -471,17 +329,17 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(200, 112);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
-            // label2
+            // labSugar
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(76, 19);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Сахар";
+            this.labSugar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labSugar.AutoSize = true;
+            this.labSugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labSugar.Location = new System.Drawing.Point(76, 19);
+            this.labSugar.Margin = new System.Windows.Forms.Padding(0);
+            this.labSugar.Name = "labSugar";
+            this.labSugar.Size = new System.Drawing.Size(47, 17);
+            this.labSugar.TabIndex = 0;
+            this.labSugar.Text = "Сахар";
             // 
             // barSugar
             // 
@@ -493,6 +351,7 @@
             this.barSugar.Name = "barSugar";
             this.barSugar.Size = new System.Drawing.Size(200, 56);
             this.barSugar.TabIndex = 1;
+            this.barSugar.Scroll += new System.EventHandler(this.barSugar_Scroll);
             // 
             // tableLayoutPanel8
             // 
@@ -538,7 +397,7 @@
             // 
             this.tableLayoutPanel10.ColumnCount = 1;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.labStrength, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.barStrength, 0, 1);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 112);
@@ -550,17 +409,17 @@
             this.tableLayoutPanel10.Size = new System.Drawing.Size(200, 113);
             this.tableLayoutPanel10.TabIndex = 2;
             // 
-            // label4
+            // labStrength
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(65, 19);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Крепость";
+            this.labStrength.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labStrength.AutoSize = true;
+            this.labStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labStrength.Location = new System.Drawing.Point(65, 19);
+            this.labStrength.Margin = new System.Windows.Forms.Padding(0);
+            this.labStrength.Name = "labStrength";
+            this.labStrength.Size = new System.Drawing.Size(70, 17);
+            this.labStrength.TabIndex = 0;
+            this.labStrength.Text = "Крепость";
             // 
             // barStrength
             // 
@@ -574,6 +433,7 @@
             this.barStrength.Size = new System.Drawing.Size(200, 57);
             this.barStrength.TabIndex = 1;
             this.barStrength.Value = 1;
+            this.barStrength.Scroll += new System.EventHandler(this.barStrength_Scroll);
             // 
             // tableLayoutPanel12
             // 
@@ -639,6 +499,170 @@
             this.butPickDrink.Text = "Забрать напиток";
             this.butPickDrink.UseVisualStyleBackColor = true;
             // 
+            // butBanknote1
+            // 
+            this.butBanknote1.Denomination = 10;
+            this.butBanknote1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBanknote1.Location = new System.Drawing.Point(0, 0);
+            this.butBanknote1.Margin = new System.Windows.Forms.Padding(0);
+            this.butBanknote1.Name = "butBanknote1";
+            this.butBanknote1.Size = new System.Drawing.Size(100, 56);
+            this.butBanknote1.TabIndex = 0;
+            this.butBanknote1.TextBut = "10р";
+            // 
+            // butBanknote2
+            // 
+            this.butBanknote2.Denomination = 50;
+            this.butBanknote2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBanknote2.Location = new System.Drawing.Point(100, 0);
+            this.butBanknote2.Margin = new System.Windows.Forms.Padding(0);
+            this.butBanknote2.Name = "butBanknote2";
+            this.butBanknote2.Size = new System.Drawing.Size(100, 56);
+            this.butBanknote2.TabIndex = 1;
+            this.butBanknote2.TextBut = "50р";
+            // 
+            // butBanknote3
+            // 
+            this.butBanknote3.Denomination = 100;
+            this.butBanknote3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBanknote3.Location = new System.Drawing.Point(0, 56);
+            this.butBanknote3.Margin = new System.Windows.Forms.Padding(0);
+            this.butBanknote3.Name = "butBanknote3";
+            this.butBanknote3.Size = new System.Drawing.Size(100, 56);
+            this.butBanknote3.TabIndex = 2;
+            this.butBanknote3.TextBut = "100р";
+            // 
+            // butBanknote4
+            // 
+            this.butBanknote4.Denomination = 500;
+            this.butBanknote4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBanknote4.Location = new System.Drawing.Point(100, 56);
+            this.butBanknote4.Margin = new System.Windows.Forms.Padding(0);
+            this.butBanknote4.Name = "butBanknote4";
+            this.butBanknote4.Size = new System.Drawing.Size(100, 56);
+            this.butBanknote4.TabIndex = 3;
+            this.butBanknote4.TextBut = "500р";
+            // 
+            // butMocha
+            // 
+            this.butMocha.CookingTime = 2000;
+            this.butMocha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butMocha.DrinkName = "Мокко\n40р";
+            this.butMocha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butMocha.Location = new System.Drawing.Point(300, 112);
+            this.butMocha.Margin = new System.Windows.Forms.Padding(0);
+            this.butMocha.Name = "butMocha";
+            this.butMocha.Price = 40;
+            this.butMocha.Size = new System.Drawing.Size(100, 113);
+            this.butMocha.Strength = 0;
+            this.butMocha.Sugar = 0;
+            this.butMocha.TabIndex = 7;
+            // 
+            // butBlackTeaLemon
+            // 
+            this.butBlackTeaLemon.CookingTime = 10000;
+            this.butBlackTeaLemon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBlackTeaLemon.DrinkName = "Чай черный с лимоном\n15р";
+            this.butBlackTeaLemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butBlackTeaLemon.Location = new System.Drawing.Point(200, 112);
+            this.butBlackTeaLemon.Margin = new System.Windows.Forms.Padding(0);
+            this.butBlackTeaLemon.Name = "butBlackTeaLemon";
+            this.butBlackTeaLemon.Price = 15;
+            this.butBlackTeaLemon.Size = new System.Drawing.Size(100, 113);
+            this.butBlackTeaLemon.Strength = 0;
+            this.butBlackTeaLemon.Sugar = 0;
+            this.butBlackTeaLemon.TabIndex = 6;
+            // 
+            // butBlackTea
+            // 
+            this.butBlackTea.CookingTime = 10000;
+            this.butBlackTea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butBlackTea.DrinkName = "Чай черный\n15р";
+            this.butBlackTea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butBlackTea.Location = new System.Drawing.Point(100, 112);
+            this.butBlackTea.Margin = new System.Windows.Forms.Padding(0);
+            this.butBlackTea.Name = "butBlackTea";
+            this.butBlackTea.Price = 15;
+            this.butBlackTea.Size = new System.Drawing.Size(100, 113);
+            this.butBlackTea.Strength = 0;
+            this.butBlackTea.Sugar = 0;
+            this.butBlackTea.TabIndex = 5;
+            // 
+            // butLatte
+            // 
+            this.butLatte.CookingTime = 15000;
+            this.butLatte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butLatte.DrinkName = "Латте\n40р";
+            this.butLatte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butLatte.Location = new System.Drawing.Point(0, 112);
+            this.butLatte.Margin = new System.Windows.Forms.Padding(0);
+            this.butLatte.Name = "butLatte";
+            this.butLatte.Price = 40;
+            this.butLatte.Size = new System.Drawing.Size(100, 113);
+            this.butLatte.Strength = 0;
+            this.butLatte.Sugar = 0;
+            this.butLatte.TabIndex = 4;
+            // 
+            // butHotChocolate
+            // 
+            this.butHotChocolate.CookingTime = 10000;
+            this.butHotChocolate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butHotChocolate.DrinkName = "Горячий шоколад\n20р";
+            this.butHotChocolate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butHotChocolate.Location = new System.Drawing.Point(300, 0);
+            this.butHotChocolate.Margin = new System.Windows.Forms.Padding(0);
+            this.butHotChocolate.Name = "butHotChocolate";
+            this.butHotChocolate.Price = 20;
+            this.butHotChocolate.Size = new System.Drawing.Size(100, 112);
+            this.butHotChocolate.Strength = 0;
+            this.butHotChocolate.Sugar = 0;
+            this.butHotChocolate.TabIndex = 3;
+            // 
+            // butCappuccino
+            // 
+            this.butCappuccino.CookingTime = 15000;
+            this.butCappuccino.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butCappuccino.DrinkName = "Капучино\n40р";
+            this.butCappuccino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butCappuccino.Location = new System.Drawing.Point(200, 0);
+            this.butCappuccino.Margin = new System.Windows.Forms.Padding(0);
+            this.butCappuccino.Name = "butCappuccino";
+            this.butCappuccino.Price = 40;
+            this.butCappuccino.Size = new System.Drawing.Size(100, 112);
+            this.butCappuccino.Strength = 0;
+            this.butCappuccino.Sugar = 0;
+            this.butCappuccino.TabIndex = 2;
+            // 
+            // butAmericano
+            // 
+            this.butAmericano.CookingTime = 12000;
+            this.butAmericano.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butAmericano.DrinkName = "Американо\n30р";
+            this.butAmericano.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butAmericano.Location = new System.Drawing.Point(100, 0);
+            this.butAmericano.Margin = new System.Windows.Forms.Padding(0);
+            this.butAmericano.Name = "butAmericano";
+            this.butAmericano.Price = 30;
+            this.butAmericano.Size = new System.Drawing.Size(100, 112);
+            this.butAmericano.Strength = 0;
+            this.butAmericano.Sugar = 0;
+            this.butAmericano.TabIndex = 1;
+            // 
+            // butEspresso
+            // 
+            this.butEspresso.CookingTime = 10000;
+            this.butEspresso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.butEspresso.DrinkName = "Эспрессо\n20р";
+            this.butEspresso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butEspresso.Location = new System.Drawing.Point(0, 0);
+            this.butEspresso.Margin = new System.Windows.Forms.Padding(0);
+            this.butEspresso.Name = "butEspresso";
+            this.butEspresso.Price = 20;
+            this.butEspresso.Size = new System.Drawing.Size(100, 112);
+            this.butEspresso.Strength = 0;
+            this.butEspresso.Sugar = 0;
+            this.butEspresso.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -653,7 +677,7 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableDrinkButtons.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
@@ -680,10 +704,9 @@
         private System.Windows.Forms.Label currentBalance;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labSugar;
         private System.Windows.Forms.TrackBar barSugar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label3;
@@ -693,16 +716,15 @@
         private System.Windows.Forms.Button butReturnMoney;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label currentStrength;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labStrength;
         private System.Windows.Forms.TrackBar barStrength;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button butPickDrink;
-        private ButDrink butMocha;
         private ButDrink butBlackTeaLemon;
         private ButDrink butBlackTea;
         private ButDrink butLatte;
@@ -714,6 +736,9 @@
         private ButBanknote butBanknote2;
         private ButBanknote butBanknote3;
         private ButBanknote butBanknote4;
+        private System.Windows.Forms.TableLayoutPanel tableDrinkButtons;
+        private ButDrink butMocha;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
@@ -20,19 +21,18 @@ namespace lab2_CoffeeMachine
 
         public string DrinkName
         {
-            get { return this.button1.Text; }
-            set { this.button1.Text = Price>0 ? $"{value}\n{Price}" : value; }
+            get => this.button1.Text;
+            set => this.button1.Text = Price>0 ? $"{value}\n{Price}" : value;
         }
 
-        public void Select()
+        public void Select(Collection<ButDrink> butDrinks)
         {
-            isSelected = !isSelected;
-            Highlighting();
-        }
-
-        private void Highlighting()
-        {
-            this.button1.BackColor = isSelected ? Color.GreenYellow : default;
+            this.isSelected = !this.isSelected;
+            this.button1.BackColor = this.isSelected ? Color.GreenYellow : Button.DefaultBackColor;
+            foreach (ButDrink butDrink in butDrinks)
+            {
+                butDrink.Enabled = false;
+            }
         }
 
         public event EventHandler Click
@@ -46,7 +46,9 @@ namespace lab2_CoffeeMachine
                 button1.Click -= value;
             }
         }
-
         public int Price { get; set; }
+        public int CookingTime{ get; set; }
+        public int Strength { get; set; }
+        public int Sugar { get; set; }
     }
 }

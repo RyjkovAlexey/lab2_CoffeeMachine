@@ -10,6 +10,6 @@ namespace lab2_CoffeeMachine
     {
         public string NameDrink { get; set; }
         public int PriceDrink { get; set; }
-        public DateTime TimePreparing { get; set; }
+        public int TimePreparing { get; set; }
     }
 }
