@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace lab2_CoffeeMachine
@@ -17,25 +16,28 @@ namespace lab2_CoffeeMachine
         public Form1()
         {
             InitializeComponent();
-            foreach (ButDrink control in tableDrinkButtons.Controls)
+            foreach (ButDrink drink in tableDrinkButtons.Controls)
             {
-                butDrinks.Add(control);
-                control.Click += (object sender, EventArgs e) => butEspresso_Click(control, e);
+                butDrinks.Add(drink);
+                drink.Click += (object sender, EventArgs e) => EventSelectDrink(drink, e);
             }
+
             machine.PriceCheck(butDrinks, balance);
             foreach (ButBanknote banknote in tableLayoutPanel4.Controls)
             {
-                banknote.Click += (object sender, EventArgs e) => butBanknote1_Click(banknote, e);
+                banknote.Click += (object sender, EventArgs e) => EventBanknoteClick(banknote, e);
             }
 
             sugar = barSugar.Value;
-            strengthDrink = barSugar.Value;
+            strengthDrink = barStrength.Value;
+            butPickDrink.Enabled = false;
+            butCancelingOperation.Enabled = false;
         }
 
 
         #region butDrinks
 
-        private void butEspresso_Click(ButDrink drink, EventArgs e)
+        private void EventSelectDrink(ButDrink drink, EventArgs e)
         {
             balance.Pay(drink.Price);
             currentBalance.Text = balance.CurrentBalance.ToString();
@@ -43,14 +45,16 @@ namespace lab2_CoffeeMachine
             selectedDrink.Sugar = sugar;
             selectedDrink.Strength = strengthDrink;
             selectedDrink.Select(butDrinks);
-            machine.Preparing(selectedDrink, progressBar1,timer1);
+            machine.Preparing(selectedDrink, progressBar1, timer1);
+            butPickDrink.Enabled = true;
+            butCancelingOperation.Enabled = false;
         }
 
         #endregion
 
         #region butBanknots
 
-        private void butBanknote1_Click(ButBanknote banknote, EventArgs e)
+        private void EventBanknoteClick(ButBanknote banknote, EventArgs e)
         {
             balance.DepositMoney(banknote.Denomination);
             currentBalance.Text = balance.CurrentBalance.ToString();
@@ -84,18 +88,35 @@ namespace lab2_CoffeeMachine
         {
             MessageBox.Show($"Сдача составляет {balance.ReturnMoney()}р");
             currentBalance.Text = balance.CurrentBalance.ToString();
+            machine.PriceCheck(butDrinks, balance);
         }
 
         private void barSugar_Scroll(object sender, EventArgs e)
         {
             currentSugar.Text = barSugar.Value.ToString();
             sugar = barSugar.Value;
+            butCancelingOperation.Enabled = true;
         }
 
         private void barStrength_Scroll(object sender, EventArgs e)
         {
             currentStrength.Text = barStrength.Value.ToString();
             strengthDrink = barStrength.Value;
+            butCancelingOperation.Enabled = true;
+        }
+
+        private void butPickDrink_Click(object sender, EventArgs e)
+        {
+            machine.DispenseDrink(butPickDrink, selectedDrink, progressBar1, butDrinks);
+            machine.PriceCheck(butDrinks, balance);
+            machine.CancelOperation(barSugar, barStrength, currentSugar, currentStrength, ref sugar, ref strengthDrink);
+        }
+
+        private void butCancelingOperation_Click(object sender, EventArgs e)
+        {
+            machine.CancelOperation(barSugar, barStrength, currentSugar, currentStrength, ref sugar, ref strengthDrink);
+            machine.PriceCheck(butDrinks,balance);
+            butCancelingOperation.Enabled = false;
         }
     }
 }

@@ -57,6 +57,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.butPickDrink = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.butBanknote1 = new lab2_CoffeeMachine.ButBanknote();
             this.butBanknote2 = new lab2_CoffeeMachine.ButBanknote();
             this.butBanknote3 = new lab2_CoffeeMachine.ButBanknote();
@@ -69,7 +70,6 @@
             this.butCappuccino = new lab2_CoffeeMachine.ButDrink();
             this.butAmericano = new lab2_CoffeeMachine.ButDrink();
             this.butEspresso = new lab2_CoffeeMachine.ButDrink();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -215,6 +215,7 @@
             this.butCancelingOperation.TabIndex = 1;
             this.butCancelingOperation.Text = "Отмена операции";
             this.butCancelingOperation.UseVisualStyleBackColor = true;
+            this.butCancelingOperation.Click += new System.EventHandler(this.butCancelingOperation_Click);
             // 
             // butReturnMoney
             // 
@@ -498,6 +499,7 @@
             this.butPickDrink.TabIndex = 1;
             this.butPickDrink.Text = "Забрать напиток";
             this.butPickDrink.UseVisualStyleBackColor = true;
+            this.butPickDrink.Click += new System.EventHandler(this.butPickDrink_Click);
             // 
             // butBanknote1
             // 

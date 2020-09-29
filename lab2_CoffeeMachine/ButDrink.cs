@@ -35,6 +35,16 @@ namespace lab2_CoffeeMachine
             }
         }
 
+        public void RecoverBut(Collection<ButDrink> butDrinks)
+        {
+            this.isSelected = !this.isSelected;
+            this.button1.BackColor = this.isSelected ? Color.GreenYellow : Button.DefaultBackColor;
+            foreach (ButDrink butDrink in butDrinks)
+            {
+                butDrink.Enabled = true;
+            }
+        }
+
         public event EventHandler Click
         {
             add
